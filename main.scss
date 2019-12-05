@@ -1,8 +1,23 @@
 @import "home";
+@import "variables";
 
 $section-bkgd-color: gray;
 $hover-color: green;
 $accent-color: red;
+
+@mixin main-background ($padding, $font-size){
+  padding: $padding;
+  text-align: center;
+  font-size: $font-size;
+}
+
+header {
+  @include main-background(20px, 30px)
+}
+
+footer {
+  @include main-background(20px, 10px)
+}
 
 section {
   background-color: $section-bkgd-color;
