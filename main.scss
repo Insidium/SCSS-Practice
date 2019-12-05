@@ -1,3 +1,25 @@
-body {
-    font-size: 20px;
+@import "home";
+
+$section-bkgd-color: gray;
+$hover-color: green;
+$accent-color: red;
+
+section {
+  background-color: $section-bkgd-color;
+
+  h1 {
+    font-size: 60px;
+
+    &:hover {
+      color: $hover-color;
+    }
   }
+
+  p {
+    font-style: italic;
+
+    span {
+      color: $accent-color;
+    }
+  }
+}
